@@ -38,9 +38,11 @@ Currently using version 2.4 of Pathogen
 ### Plugins Used
 
 * [Dockerfile](https://github.com/docker/docker/tree/master/contrib/syntax/vim)
+* [github.com/w0rp/ale](https://github.com/w0rp/ale.git)
 * [github.com/ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim.git)
 * [github.com/Raimondi/delimitMate](https://github.com/Raimondi/delimitMate.git)
 * [github.com/zchee/deoplete-go](https://github.com/zchee/deoplete-go.git)
+* [github.com/deoplete-plugins/deoplete-jedi](https://github.com/deoplete-plugins/deoplete-jedi)
 * [github.com/Shougo/deoplete.nvim](https://github.com/Shougo/deoplete.nvim.git)
 * [github.com/vivien/vim-linux-coding-style](https://github.com/vivien/vim-linux-coding-style.git)
 * [github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree.git)
@@ -63,6 +65,7 @@ Currently using version 2.4 of Pathogen
 * [github.com/fatih/vim-hclfmt](https://github.com/fatih/vim-hclfmt.git)
 * [github.com/Yggdroot/indentLine](https://github.com/Yggdroot/indentLine.git)
 * [github.com/elzr/vim-json](https://github.com/elzr/vim-json.git)
+* [github.com/google/vim-jsonnet](https://github.com/google/vim-jsonnet)
 * [github.com/plasticboy/vim-markdown](https://github.com/plasticboy/vim-markdown.git)
 * [github.com/harenome/vim-mipssyntax](https://github.com/harenome/vim-mipssyntax.git)
 * [github.com/terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors.git)
@@ -75,19 +78,3 @@ Currently using version 2.4 of Pathogen
 * [github.com/hashivim/vim-terraform](https://github.com/hashivim/vim-terraform.git)
 * [github.com/cespare/vim-toml](https://github.com/cespare/vim-toml.git)
 * [github.com/stephpy/vim-yaml](https://github.com/stephpy/vim-yaml.git)
-
-## Contributing
-
-### Using the `Makefile`
-
-You can use the [`Makefile`](Makefile) to run a series of commands.
-
-```console
-$ make help
-install                        Sets up symlink for user and root .vimrc for vim and neovim.
-README.md                      Generates and updates plugin info in README.md.
-remove-submodule               Removes a git submodule (ex MODULE=bundle/nginx.vim).
-update-pathogen                Updates pathogen.
-update-plugins                 Updates all plugins.
-update                         Updates pathogen and all plugins.
-```
