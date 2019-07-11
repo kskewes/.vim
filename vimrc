@@ -116,9 +116,9 @@ set display+=lastline
 inoremap <C-U> <C-G>u<C-U>
 
 " In many terminal emulators the mouse works just fine, thus enable it.
-" if has('mouse')
-"  set mouse=a
-" endif
+if has('mouse')
+ set mouse=a
+endif
 
 " If linux then set ttymouse
 let s:uname = system("echo -n \"$(uname)\"")
@@ -596,3 +596,11 @@ let g:rust_clip_command = 'xclip -selection clipboard'
 let g:terraform_fmt_on_save=1
 
 " vim:ts=2:sw=2:et
+
+" =================== ale ========================
+
+" Enable integration with airline.
+let g:airline#extensions#ale#enabled = 1
+
+" Enable show type info in status line
+" let g:go_auto_type_info = 1
