@@ -334,6 +334,7 @@ au FileType nginx setlocal noet ts=4 sw=4 sts=4
 
 " Go settings
 au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
+call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
 " autocmd BufEnter *.go colorscheme nofrils-dark
 
 " scala settings
