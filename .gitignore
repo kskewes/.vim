@@ -1,4 +1,5 @@
 .git/
 .git
 bundle/*/doc/tags
+view/
 init.vim
