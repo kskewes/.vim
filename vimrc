@@ -115,7 +115,7 @@ inoremap <C-U> <C-G>u<C-U>
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
- set mouse=a
+  set mouse=a
 endif
 
 " If linux then set ttymouse
@@ -332,7 +332,6 @@ au FileType nginx setlocal noet ts=4 sw=4 sts=4
 
 " Go settings
 au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
-call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
 " autocmd BufEnter *.go colorscheme nofrils-dark
 
 " scala settings
@@ -527,20 +526,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 let g:vim_json_syntax_conceal = 0
 
 " ==================== Completion =========================
-" use deoplete for Neovim.
-if has('nvim')
-  let g:deoplete#enable_at_startup = 1
-  let g:deoplete#ignore_sources = {}
-  let g:deoplete#ignore_sources._ = ['buffer', 'member', 'tag', 'file', 'neosnippet']
-  let g:deoplete#sources#go#sort_class = ['func', 'type', 'var', 'const']
-  let g:deoplete#sources#go#align_class = 1
-
-
-  " Use partial fuzzy matches like YouCompleteMe
-  call deoplete#custom#source('_', 'matchers', ['matcher_fuzzy'])
-  call deoplete#custom#source('_', 'converters', ['converter_remove_paren'])
-  call deoplete#custom#source('_', 'disabled_syntaxes', ['Comment', 'String'])
-endif
 
 " ==================== vim-multiple-cursors ====================
 let g:multi_cursor_use_default_mapping=0
@@ -580,6 +565,7 @@ let g:vim_markdown_toc_autofit = 1
 
 " Disable conceal
 let g:vim_markdown_conceal = 0
+let g:vim_markdown_conceal_code_blocks = 0
 
 " Allow the ge command to follow named anchors in links of the form
 " file#anchor or just #anchor, where file may omit the .md extension as usual
@@ -619,11 +605,3 @@ let g:rust_clip_command = 'xclip -selection clipboard'
 let g:terraform_fmt_on_save=1
 
 " vim:ts=2:sw=2:et
-
-" =================== ale ========================
-
-" Enable integration with airline.
-let g:airline#extensions#ale#enabled = 1
-
-" Enable show type info in status line
-" let g:go_auto_type_info = 1
