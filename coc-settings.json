@@ -5,5 +5,8 @@
       "rootPatterns": ["go.mod"],
       "filetypes": ["go"]
     }
+  },
+  "yaml.schemas": {
+    "kubernetes": "/*kubernetes/*.yaml"
   }
 }
