@@ -105,3 +105,6 @@
 [submodule "bundle/coc.nvim"]
 	path = bundle/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
+[submodule "bundle/vim-cue"]
+	path = bundle/vim-cue
+	url = https://github.com/jjo/vim-cue.git
