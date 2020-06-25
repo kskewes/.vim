@@ -38,6 +38,7 @@ Currently using version 2.4 of Pathogen
 ### Plugins Used
 
 * [Dockerfile](https://github.com/docker/docker/tree/master/contrib/syntax/vim)
+* [github.com/neoclide/coc.nvim](https://github.com/neoclide/coc.nvim.git)
 * [github.com/ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim.git)
 * [github.com/Raimondi/delimitMate](https://github.com/Raimondi/delimitMate.git)
 * [github.com/vivien/vim-linux-coding-style](https://github.com/vivien/vim-linux-coding-style.git)
@@ -51,6 +52,7 @@ Currently using version 2.4 of Pathogen
 * [github.com/ap/vim-buftabline](https://github.com/ap/vim-buftabline.git)
 * [github.com/crosbymichael/vim-cfmt](https://github.com/crosbymichael/vim-cfmt)
 * [github.com/altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized.git)
+* [github.com/jjo/vim-cue](https://github.com/jjo/vim-cue.git)
 * [github.com/tpope/vim-endwise](https://github.com/tpope/vim-endwise.git)
 * [github.com/tpope/vim-five.git](https://github.com/tpope/vim-fugitive.git)
 * [github.com/tpope/vim.git](https://github.com/tpope/vim-git.git)
