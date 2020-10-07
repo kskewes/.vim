@@ -321,27 +321,17 @@ au BufNewFile,BufRead *.yml,*.yaml setlocal expandtab ts=2 sw=2
 au BufNewFile,BufRead *.cpp setlocal expandtab ts=2 sw=2
 au BufNewFile,BufRead *.hpp setlocal expandtab ts=2 sw=2
 au BufNewFile,BufRead *.json setlocal expandtab ts=2 sw=2
-au BufNewFile,BufRead *.jade setlocal expandtab ts=2 sw=2
 
 augroup filetypedetect
   au BufNewFile,BufRead .tmux.conf*,tmux.conf* setf tmux
-  au BufNewFile,BufRead .nginx.conf*,nginx.conf* setf nginx
 augroup END
-
-au FileType nginx setlocal noet ts=4 sw=4 sts=4
 
 " Go settings
 au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
 " autocmd BufEnter *.go colorscheme nofrils-dark
 
-" scala settings
-autocmd BufNewFile,BufReadPost *.scala setl shiftwidth=2 expandtab
-
 " Markdown Settings
 autocmd BufNewFile,BufReadPost *.md setl ts=4 sw=4 sts=4 expandtab
-
-" lua settings
-autocmd BufNewFile,BufRead *.lua setlocal noet ts=4 sw=4 sts=4
 
 " Dockerfile settings
 autocmd FileType dockerfile set noexpandtab
@@ -358,9 +348,6 @@ au BufRead,BufNewFile MAINTAINERS set ft=toml
 
 " hcl settings
 au BufRead,BufNewFile *.workflow set ft=hcl
-
-" mips settings
-au BufRead,BufNewFile *.mips set ft=mips
 
 " spell check for git commits
 autocmd FileType gitcommit setlocal spell
@@ -478,9 +465,6 @@ vnoremap <leader>gb :Gblame<CR>
 " =================== Vim-cfmt ===================
 let g:cfmt_style = '-linux'
 "autocmd BufWritePre *.c,*.h Cfmt
-
-" ================== linuxsty ====================
-"let g:linuxsty_patterns = ['/usr/src/', '/linux']
 
 " ==================== Vim-go ====================
 let g:go_auto_type_info = 1
@@ -635,16 +619,6 @@ let g:remoteSession = ($STY == "")
 if !g:remoteSession
   let g:airline_powerline_fonts=1
 endif
-
-" =================== rust.vim ========================
-
-" Enable automatic running of :RustFmt when a buffer is saved.
-let g:rustfmt_autosave = 1
-
-" The :RustPlay command will send the current selection, or if nothing is
-" selected the current buffer, to the Rust playpen. Then copy the url to the
-" clipboard.
-let g:rust_clip_command = 'xclip -selection clipboard'
 
 " =================== vim-terraform ========================
 

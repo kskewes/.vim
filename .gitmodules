@@ -68,9 +68,6 @@
 [submodule "bundle/vim-airline-themes"]
 	path = bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
-[submodule "bundle/linuxsty.vim"]
-	path = bundle/linuxsty.vim
-	url = https://github.com/vivien/vim-linux-coding-style.git
 [submodule "bundle/vim-systemd"]
 	path = bundle/vim-systemd
 	url = https://github.com/wgwoods/vim-systemd-syntax.git
@@ -92,9 +89,6 @@
 [submodule "bundle/vim-protobuf"]
 	path = bundle/vim-protobuf
 	url = https://github.com/uarun/vim-protobuf.git
-[submodule "bundle/vim-mipssyntax"]
-	path = bundle/vim-mipssyntax
-	url = https://github.com/harenome/vim-mipssyntax.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
@@ -105,6 +99,3 @@
 [submodule "bundle/coc.nvim"]
 	path = bundle/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
-[submodule "bundle/vim-cue"]
-	path = bundle/vim-cue
-	url = https://github.com/jjo/vim-cue.git
