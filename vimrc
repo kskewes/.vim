@@ -555,6 +555,12 @@ let NERDTreeIgnore=['\.vim$', '\~$', '\.git$', '.DS_Store']
 " Close nerdtree and vim on close file
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+" ==================== vim-javacomplete2 ====================
+
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+let g:JavaComplete_JavaCompiler="/usr/bin/javac"
+
 " ==================== vim-json ====================
 
 let g:vim_json_syntax_conceal = 0

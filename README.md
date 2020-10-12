@@ -58,6 +58,7 @@ Currently using version 2.4 of Pathogen
 * [github.com/fatih/vim-go](https://github.com/fatih/vim-go.git)
 * [github.com/fatih/vim-hclfmt](https://github.com/fatih/vim-hclfmt.git)
 * [github.com/Yggdroot/indentLine](https://github.com/Yggdroot/indentLine.git)
+* [github.com/artur-shaik/vim-javacomplete2](https://github.com/artur-shaik/vim-javacomplete2.git)
 * [github.com/elzr/vim-json](https://github.com/elzr/vim-json.git)
 * [github.com/google/vim-jsonnet](https://github.com/google/vim-jsonnet.git)
 * [github.com/plasticboy/vim-markdown](https://github.com/plasticboy/vim-markdown.git)
