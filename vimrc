@@ -333,9 +333,6 @@ au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
 " Markdown Settings
 autocmd BufNewFile,BufReadPost *.md setl ts=4 sw=4 sts=4 expandtab
 
-" Dockerfile settings
-autocmd FileType dockerfile set noexpandtab
-
 " shell/config/systemd settings
 autocmd FileType fstab,systemd set noexpandtab
 autocmd FileType gitconfig,sh,toml set noexpandtab
@@ -550,7 +547,7 @@ noremap <Leader>f :NERDTreeFind<cr>
 
 let NERDTreeShowHidden=1
 
-let NERDTreeIgnore=['\.vim$', '\~$', '\.git$', '.DS_Store']
+let NERDTreeIgnore=['\.vim$', '\~$', '\.git$', '\.terraform$']
 
 " Close nerdtree and vim on close file
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
@@ -596,9 +593,6 @@ autocmd BufWritePre * if index(blacklist, &ft) < 0 | StripWhitespace
 
 " ========= vim-markdown ==================
 
-" disable folding
-let g:vim_markdown_folding_disabled = 1
-
 " Allow for the TOC window to auto-fit when it's possible for it to shrink.
 " It never increases its default size (half screen), it only shrinks.
 let g:vim_markdown_toc_autofit = 1
@@ -628,10 +622,8 @@ endif
 
 " =================== vim-terraform ========================
 
-" Allow vim-terraform to override your .vimrc indentation syntax for matching files.
-"let g:terraform_align=1
+"Allow vim-terraform to automatically fold (hide until unfolded) sections of terraform code.
+let g:terraform_fold_sections=1
 
 " Run terraform fmt on save.
 let g:terraform_fmt_on_save=1
-
-" vim:ts=2:sw=2:et
