@@ -588,10 +588,13 @@ endfunction
 " ========= vim-better-whitespace ==================
 
 " auto strip whitespace except for file with extention blacklisted
-let blacklist = ['diff', 'gitcommit', 'unite', 'qf', 'help', 'markdown']
+let blacklist = ['diff', 'gitcommit', 'unite', 'qf', 'help']
 autocmd BufWritePre * if index(blacklist, &ft) < 0 | StripWhitespace
 
 " ========= vim-markdown ==================
+
+" disable folding
+let g:vim_markdown_folding_disabled = 1
 
 " Allow for the TOC window to auto-fit when it's possible for it to shrink.
 " It never increases its default size (half screen), it only shrinks.
@@ -623,7 +626,7 @@ endif
 " =================== vim-terraform ========================
 
 "Allow vim-terraform to automatically fold (hide until unfolded) sections of terraform code.
-let g:terraform_fold_sections=1
+let g:terraform_fold_sections=0
 
 " Run terraform fmt on save.
 let g:terraform_fmt_on_save=1
