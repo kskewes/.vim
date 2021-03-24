@@ -99,6 +99,9 @@
 [submodule "bundle/vim-javacomplete2"]
 	path = bundle/vim-javacomplete2
 	url = https://github.com/artur-shaik/vim-javacomplete2.git
+[submodule "bundle/vim-shfmt"]
+	path = bundle/vim-shfmt
+	url = https://github.com/z0mbix/vim-shfmt.git
 [submodule "bundle/coc.nvim"]
 	path = bundle/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git

@@ -9,7 +9,9 @@ filetype plugin indent on     " required
 
 "
 " Settings
-"
+
+set diffopt+=iwhite             " Ignore whitespace in vimdiff
+
 set noerrorbells                " No beeps
 set number                      " Show line numbers
 set backspace=indent,eol,start  " Makes backspace key more powerful.
@@ -330,6 +332,9 @@ augroup END
 au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
 " autocmd BufEnter *.go colorscheme nofrils-dark
 
+" Groovy settings
+autocmd BufNewFile,BufRead Jenkinsfile set syntax=groovy
+
 " Markdown Settings
 autocmd BufNewFile,BufReadPost *.md setl ts=4 sw=4 sts=4 expandtab
 
@@ -622,6 +627,9 @@ let g:remoteSession = ($STY == "")
 if !g:remoteSession
   let g:airline_powerline_fonts=1
 endif
+
+" =================== vim-shfmt ========================
+let g:shfmt_fmt_on_save = 1
 
 " =================== vim-terraform ========================
 
